@@ -54,7 +54,7 @@ const radif = require("./tasks/radif");
 function taskRadif () {
 
     // No 1
-    // Program: Create triangle
+    // Program: Create Triangle
     // Failed
     try {
         radif.triangle("abc");     
@@ -62,7 +62,6 @@ function taskRadif () {
         console.log(error.message);
     }
 
-    // Program: Create triangle
     // Failed
     try {
         radif.triangle(-1);     
@@ -70,7 +69,6 @@ function taskRadif () {
         console.log(error.message);
     }
 
-    // Program: Create triangle
     // Success
     try {
         radif.triangle(2);     
@@ -78,7 +76,6 @@ function taskRadif () {
         console.log(error.message);
     }
 
-    // Program: Create triangle
     // Success
     try {
         radif.triangle(5);     
@@ -91,8 +88,6 @@ function taskRadif () {
     // Success
     console.log(radif.countArray([1, 2, 3, 4, 5]));
     
-
-    // Program: Count Array
     // Success
     console.log(radif.countArray([2, 2, 2, 2, 2]));
 
@@ -105,7 +100,6 @@ function taskRadif () {
         console.log(error.message);
     }
 
-    // Program: Create Reversed Triangle Column
     // Failed
     try {
         radif.triangleReversed(-1);     
@@ -113,7 +107,6 @@ function taskRadif () {
         console.log(error.message);
     }
 
-    // Program: Create Reversed Triangle Column
     // Success
     try {
         radif.triangleReversed(1);     
@@ -121,7 +114,6 @@ function taskRadif () {
         console.log(error.message);
     }
 
-    // Program: Create Reversed Triangle Column
     // Success
     try {
         radif.triangleReversed(2);     
@@ -129,7 +121,6 @@ function taskRadif () {
         console.log(error.message);
     }
 
-    // Program: Create Reversed Triangle Column
     // Success
     try {
         radif.triangleReversed(5);     
@@ -140,18 +131,12 @@ function taskRadif () {
     // No 4
     // Program: Process numbers
     // Success
-    try {
-        console.log(radif.processNumbers([1, 2, 3, 4, 5]));   
-    } catch (error) {
-        console.log(error.message);
-    }
+    console.log(radif.processNumbers([1, 2, 3, 4, 5]));   
+    
 
-    // Program: Process numbers
-    try {
-        console.log(radif.processNumbers([2, 4, 6, 8]));   
-    } catch (error) {
-        console.log(error.message);
-    }
+    // Success
+    console.log(radif.processNumbers([2, 4, 6, 8]));   
+    
 
     // No 5
     // Program: Print table
@@ -162,7 +147,6 @@ function taskRadif () {
         console.log(error.message);
     }
 
-    // Program: Print table
     // Failed
     try {
         radif.cetakTabel(-1);   
@@ -170,7 +154,6 @@ function taskRadif () {
         console.log(error.message);
     }
 
-    // Program: Print table
     // Success
     try {
         radif.cetakTabel(3);   
@@ -184,8 +167,7 @@ function taskRadif () {
     radif.buatRentang(1, 5);   
     
 
-    // Program: Print range
-    // Failed
+    // Success
     radif.buatRentang(5, 10); 
 
 }
