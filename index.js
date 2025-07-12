@@ -49,7 +49,7 @@ tasksIrul();
  */
 
 // import your tasks here
-const radif = require("./tasks/radif")
+const radif = require("./tasks/radif");
 
 function taskRadif () {
 
@@ -128,6 +128,20 @@ function taskRadif () {
     // Failed
     try {
         radif.cetakTabel("abc");   
+    } catch (error) {
+        console.log(error.message);
+    }
+
+    // Program: Print range
+    try {
+        radif.buatRentang(1, 5);   
+    } catch (error) {
+        console.log(error.message);
+    }
+
+    // Program: Print range
+    try {
+        radif.buatRentang(3, 10);   
     } catch (error) {
         console.log(error.message);
     }
