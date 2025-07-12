@@ -95,7 +95,39 @@ function taskRadif () {
     console.log(radif.countArray([2, 2, 2, 2, 2]));
 
 
-    // Program: Create reversed triangle
+    // Program: Create Reversed Triangle Column
+    // Failed
+    try {
+        radif.triangleReversed("abc");     
+    } catch (error) {
+        console.log(error.message);
+    }
+
+    // Program: Create Reversed Triangle Column
+    // Failed
+    try {
+        radif.triangleReversed(-1);     
+    } catch (error) {
+        console.log(error.message);
+    }
+
+    // Program: Create Reversed Triangle Column
+    // Success
+    try {
+        radif.triangleReversed(1);     
+    } catch (error) {
+        console.log(error.message);
+    }
+
+    // Program: Create Reversed Triangle Column
+    // Success
+    try {
+        radif.triangleReversed(2);     
+    } catch (error) {
+        console.log(error.message);
+    }
+
+    // Program: Create Reversed Triangle Column
     // Success
     try {
         radif.triangleReversed(5);     
@@ -103,13 +135,6 @@ function taskRadif () {
         console.log(error.message);
     }
 
-    // Program: Create reversed triangle
-    // Failed
-    try {
-        radif.triangleReversed("abc");     
-    } catch (error) {
-        console.log(error.message);
-    }
 
     // Program: process numbers
     // Success
