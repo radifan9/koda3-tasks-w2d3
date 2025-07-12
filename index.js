@@ -85,5 +85,21 @@ function taskRadif () {
         console.log(error.message);
     }
 
+    // Program: Create triangle
+    // Success
+    try {
+        radif.triangleReversed(5);     
+    } catch (error) {
+        console.log(error.message);
+    }
+
+    // Program: Create triangle
+    // Failed
+    try {
+        radif.triangleReversed("abc");     
+    } catch (error) {
+        console.log(error.message);
+    }
+
 }
 taskRadif();
