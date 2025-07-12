@@ -167,21 +167,15 @@ function taskRadif () {
         console.log(error.message);
     }
 
+    // No 6
     // Program: Print range
     // Success
-    try {
-        radif.buatRentang(1, 5);   
-    } catch (error) {
-        console.log(error.message);
-    }
+    radif.buatRentang(1, 5);   
+    
 
     // Program: Print range
     // Failed
-    try {
-        radif.buatRentang("a", 10);   
-    } catch (error) {
-        console.log(error.message);
-    }
+    radif.buatRentang(5, 10); 
 
 }
 taskRadif();
