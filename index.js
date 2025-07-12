@@ -85,7 +85,7 @@ function taskRadif () {
         console.log(error.message);
     }
 
-    // Program: Create triangle
+    // Program: Create reversed triangle
     // Success
     try {
         radif.triangleReversed(5);     
@@ -93,10 +93,26 @@ function taskRadif () {
         console.log(error.message);
     }
 
-    // Program: Create triangle
+    // Program: Create reversed triangle
     // Failed
     try {
         radif.triangleReversed("abc");     
+    } catch (error) {
+        console.log(error.message);
+    }
+
+    // Program: Create process numbers
+    // Success
+    try {
+        console.log(radif.processNumbers([1, 2, 3, 4, 5]));   
+    } catch (error) {
+        console.log(error.message);
+    }
+
+    // Program: Create process numbers
+    // Success
+    try {
+        console.log(radif.processNumbers([2, 4, 6]));   
     } catch (error) {
         console.log(error.message);
     }
