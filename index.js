@@ -45,7 +45,28 @@ function tasksIrul(){
 tasksIrul();
 
 /**
- * Task "Person Name"
+ * Task Radif
  */
 
 // import your tasks here
+const radif = require("./tasks/radif")
+
+function taskRadif () {
+
+    // Program: Create
+    // Success
+    try {
+        radif.triangle(5);     
+    } catch (error) {
+        console.log(error.message);
+    }
+
+    // Failed
+    try {
+        radif.triangle("abc");     
+    } catch (error) {
+        console.log(error.message);
+    }
+
+}
+taskRadif();
