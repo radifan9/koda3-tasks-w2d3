@@ -87,19 +87,13 @@ function taskRadif () {
 
     // Program: Count Array
     // Success
-    try {
-        console.log(radif.countArray([2, 2, 2, 2, 2]));
-    } catch (error) {
-        console.log(error.message);
-    }
+    console.log(radif.countArray([1, 2, 3, 4, 5]));
+    
 
     // Program: Count Array
-    // Failed
-    try {
-        console.log(radif.countArray([]));
-    } catch (error) {
-        console.log(error.message);
-    }
+    // Success
+    console.log(radif.countArray([2, 2, 2, 2, 2]));
+
 
     // Program: Create reversed triangle
     // Success
