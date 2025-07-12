@@ -53,6 +53,7 @@ const radif = require("./tasks/radif");
 
 function taskRadif () {
 
+    // No 1
     // Program: Create triangle
     // Failed
     try {
@@ -85,6 +86,7 @@ function taskRadif () {
         console.log(error.message);
     }
 
+    // No 2
     // Program: Count Array
     // Success
     console.log(radif.countArray([1, 2, 3, 4, 5]));
@@ -94,7 +96,7 @@ function taskRadif () {
     // Success
     console.log(radif.countArray([2, 2, 2, 2, 2]));
 
-
+    // No 3
     // Program: Create Reversed Triangle Column
     // Failed
     try {
@@ -135,8 +137,8 @@ function taskRadif () {
         console.log(error.message);
     }
 
-
-    // Program: process numbers
+    // No 4
+    // Program: Process numbers
     // Success
     try {
         console.log(radif.processNumbers([1, 2, 3, 4, 5]));   
@@ -144,9 +146,26 @@ function taskRadif () {
         console.log(error.message);
     }
 
-    // Program: process numbers
+    // Program: Process numbers
     try {
-        console.log(radif.processNumbers([2, 4, 6]));   
+        console.log(radif.processNumbers([2, 4, 6, 8]));   
+    } catch (error) {
+        console.log(error.message);
+    }
+
+    // No 5
+    // Program: Print table
+    // Failed
+    try {
+        radif.cetakTabel("abc");   
+    } catch (error) {
+        console.log(error.message);
+    }
+
+    // Program: Print table
+    // Failed
+    try {
+        radif.cetakTabel(-1);   
     } catch (error) {
         console.log(error.message);
     }
@@ -155,14 +174,6 @@ function taskRadif () {
     // Success
     try {
         radif.cetakTabel(3);   
-    } catch (error) {
-        console.log(error.message);
-    }
-
-    // Program: Print table
-    // Failed
-    try {
-        radif.cetakTabel("abc");   
     } catch (error) {
         console.log(error.message);
     }
