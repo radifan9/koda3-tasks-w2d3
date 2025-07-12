@@ -101,7 +101,7 @@ function taskRadif () {
         console.log(error.message);
     }
 
-    // Program: Create process numbers
+    // Program: process numbers
     // Success
     try {
         console.log(radif.processNumbers([1, 2, 3, 4, 5]));   
@@ -109,10 +109,25 @@ function taskRadif () {
         console.log(error.message);
     }
 
-    // Program: Create process numbers
-    // Success
+    // Program: process numbers
     try {
         console.log(radif.processNumbers([2, 4, 6]));   
+    } catch (error) {
+        console.log(error.message);
+    }
+
+    // Program: Print table
+    // Success
+    try {
+        radif.cetakTabel(3);   
+    } catch (error) {
+        console.log(error.message);
+    }
+
+    // Program: Print table
+    // Failed
+    try {
+        radif.cetakTabel("abc");   
     } catch (error) {
         console.log(error.message);
     }
