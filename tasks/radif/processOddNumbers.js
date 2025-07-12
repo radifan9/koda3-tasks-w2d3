@@ -6,14 +6,14 @@ exports.processNumbers = function (arr) {
     for (let i = 0; i < arr.length; i++) {
         // Cek apakah ganjil
         if (arr[i] % 2 != 0) {
-            temp = temp * arr[i]
+            temp = temp * arr[i];
             isOdd = true;
         }
     }
 
     if (isOdd == false) {
-        return 1
+        return 1;
     }
 
-    return temp
-}
+    return temp;
+};

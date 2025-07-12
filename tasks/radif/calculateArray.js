@@ -2,7 +2,7 @@ exports.countArray = function (arr) {
     console.log("\n---- Count Array Program ----");
     // Array must at least contain 1 element
     if (arr.length < 1 ) {
-        throw new Error("Harus berisi setidaknya 1 element")
+        throw new Error("Harus berisi setidaknya 1 element");
     }
     
     let num = 1;
@@ -10,5 +10,5 @@ exports.countArray = function (arr) {
         num = num *  arr[i];
     }
 
-    return num
-}
+    return num;
+};
