@@ -53,7 +53,7 @@ const radif = require("./tasks/radif")
 
 function taskRadif () {
 
-    // Program: Create
+    // Program: Create triangle
     // Success
     try {
         radif.triangle(5);     
@@ -61,9 +61,26 @@ function taskRadif () {
         console.log(error.message);
     }
 
+    // Program: Create triangle
     // Failed
     try {
         radif.triangle("abc");     
+    } catch (error) {
+        console.log(error.message);
+    }
+
+    // Program: Count Array
+    // Success
+    try {
+        console.log(radif.countArray([2, 2, 2, 2, 2]));
+    } catch (error) {
+        console.log(error.message);
+    }
+
+    // Program: Count Array
+    // Failed
+    try {
+        console.log(radif.countArray([]));
     } catch (error) {
         console.log(error.message);
     }
