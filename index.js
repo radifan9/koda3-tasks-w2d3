@@ -133,6 +133,7 @@ function taskRadif () {
     }
 
     // Program: Print range
+    // Success
     try {
         radif.buatRentang(1, 5);   
     } catch (error) {
@@ -140,8 +141,9 @@ function taskRadif () {
     }
 
     // Program: Print range
+    // Failed
     try {
-        radif.buatRentang(3, 10);   
+        radif.buatRentang("a", 10);   
     } catch (error) {
         console.log(error.message);
     }
